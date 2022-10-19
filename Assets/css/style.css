@@ -1,0 +1,47 @@
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;    
+    
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cardStyle{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;    
+    height: 400px;
+    align-items: center;    
+}
+.imgCards{
+    height: 80%;      
+    margin: 5px; 
+    
+}
+h2{
+    margin: 10px;
+}
+h1{
+    margin-top: 50px;
+}
+.btn{
+    margin: 20px;
+    background-color: black;
+    border: solid 0.5px black;
+    font-size: 25px;
+    transition: 0.5s;
+    color: gainsboro;
+
+}
+
+.btn_disabled{
+    
+    background-color: darkgray;
+    border: solid 0.5px gray;
+    color: grey;    
+}
