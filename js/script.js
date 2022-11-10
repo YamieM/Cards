@@ -26,7 +26,7 @@ const CARDS=[
 ];
 let count = 0;
 let button = document.querySelector('#btnAddCard')
-let cards=document.querySelector('#cards')
+let cards_tov=document.querySelector('#cards_tov')
 
 button.addEventListener('click', () => {
    
@@ -54,7 +54,7 @@ button.addEventListener('click', () => {
     price.innerHTML = CARDS[count].price
     oneCard.appendChild(price)
 
-    cards.appendChild(oneCard)
+    cards_tov.appendChild(oneCard)
 
      count++ 
     if (count===4) 
