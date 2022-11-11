@@ -26,7 +26,7 @@ const CARDS=[
 ];
 let count = 0;
 const button = document.querySelector('#btnAddCard')
-let cards_tov=document.querySelector('#cards')
+const cards_tov=document.querySelector('#cards')
 
 button?.addEventListener('click', () => {
    
