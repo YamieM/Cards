@@ -1,6 +1,6 @@
 function closeLoader() {
   const preloader = document.querySelector('.preloader');
-  preloader.classList.add('loader-success');
+  preloader.classList.add('loader_success');
 }
 
 const addElement = ({
@@ -36,10 +36,12 @@ const addElement = ({
     statusDiv.appendChild(statusRound);
     statusDiv.appendChild(element);
     if (status === 'Alive') {
-      statusRound.dataset.status = 'Alive'
+      statusRound.dataset.status = 'alive';
+      return statusRound;
     }
     else if (status === 'Dead') {
-      statusRound.dataset.status = 'Dead'
+      statusRound.dataset.status = 'dead';
+      return statusRound;
     }
 
     return grandParentElement.appendChild(parentElement);
