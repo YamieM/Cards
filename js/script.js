@@ -25,10 +25,10 @@ const CARDS=[
     },
 ];
 let count = 0;
-let button = document.querySelector('#btnAddCard')
-let cards=document.querySelector('#cards')
+const button = document.querySelector('#btnAddCard')
+const cards_tov=document.querySelector('#cards')
 
-button.addEventListener('click', () => {
+button?.addEventListener('click', () => {
    
     let oneCard = document.createElement('div')
     oneCard.classList.add('cardStyle') 
@@ -38,11 +38,10 @@ button.addEventListener('click', () => {
     name.innerHTML = CARDS[count].name
     oneCard.appendChild(name)
     
-    
        
 
     let img = document.createElement('img')
-    img.classList.add('img')
+    
     img.id = `price${count}`
     img.src=CARDS[count].img
     oneCard.appendChild(img)
@@ -54,10 +53,10 @@ button.addEventListener('click', () => {
     price.innerHTML = CARDS[count].price
     oneCard.appendChild(price)
 
-    cards.appendChild(oneCard)
+    cards_tov.appendChild(oneCard)
 
      count++ 
-    if (count===4) 
+    if (count===CARDS.length)
     {button.disabled=true;
     button.classList.add('btn_disabled');
     };  
