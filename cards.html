@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/css/style.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleForm.css">
     <title>Товары недели</title>
 </head>
+
 <body>
     <div class="containerMain">
-            <div>
-                <h1>ТОВАРЫ НЕДЕЛИ</h1>
-            </div>
-        <div id="cards" class="cards_tov">            
+        <div>
+            <h1>ТОВАРЫ НЕДЕЛИ</h1>
+        </div>
+        <div id="cards" class="cards_tov">
             <div id="card1" class="cardStyle">
-                <h2>Мармелад Mamba</h2>                
+                <h2>Мармелад Mamba</h2>
                 <img class="imgCards" src="./Assets/Images/mamba.png">
                 <h2>Цена: 103 руб.</h2>
-            </div>           
-        </div>        
+            </div>
+        </div>
         <button id="btnAddCard" class="btn">Показать еще</button>
         <div class="preloader">
             <div class="loader"></div>
@@ -27,10 +30,41 @@
         <div class="main">
             <div class="cards"></div>
         </div>
-        <script src="./js/script.js"></script>  
+
+        <script src="./js/script.js"></script>
         <script src="./preloader.js"></script>
-        <script src="./script.js"></script>  
+        <script src="./script.js"></script>
+        <div class="form-container">
+            <form action="" name="infoForm" class="info-form">
+                <ul class="form-content">
+                    <li class="form-row">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" placeholder="Введите имя" class="info-form_input" required onchange="getName(this.value)">
+                    </li>
+                    <li class="form-row">
+                        <label for="phone">Телефон</label>
+                        <input type="text" name="phone" placeholder="Введите телефон" class="info-form_input" required onchange="getPhone(this.value)">
+                    </li>
+                    <li class="form-row">
+                        <select name="complexity" class="info-form_select" title="Сложность">
+                            <option value="easy" selected>Легко</option>
+                            <option value="medium">Средне</option>
+                            <option value="hard">Тяжело</option>
+                        </select>
+                    </li>
+                    <li class="form-row">
+                        <input type="checkbox" name="checkbox" id="info-form_checkbox">
+                        <label for="info-form_checkbox">Проверено</label>
+                    </li>
+                    <li class="form-row">
+                        <input type="submit" name="submitBtn" onclick="event.preventDefault()">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <script src="./form.js"></script>
     </div>
-    
+
 </body>
+
 </html>
