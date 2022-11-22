@@ -21,11 +21,11 @@ else submitBtn.disabled=true;
 submitBtn.addEventListener('click', () => {
     const name = infoForm.name.value;
     const phone = infoForm.phone.value;
-    const comlexity = infoForm.complexity.value;
+    const complexity = infoForm.complexity.value;
     const infoObj = {
         name,
         phone,
-        comlexity,
+        complexity,
         isChecked: infoForm.checkbox.checked,
     }
     console.log(infoObj);
