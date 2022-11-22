@@ -1,0 +1,25 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    width: 300px;
+    background: rgb(60, 62, 68);
+    border-radius: 5%;
+}
+
+.form-content {
+    list-style: none;
+    padding: 30px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.form-row>label {
+    padding: 5px 5px 10px 0px;
+    flex: 1;
+    color: azure;
+}
