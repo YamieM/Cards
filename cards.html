@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/css/style.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./styleForm.css">
+    <link rel="stylesheet" href="./Assets/css/style-rm.css">
+    <link rel="stylesheet" href="./Assets/css/styleForm.css">
     <title>Товары недели</title>
 </head>
 
@@ -31,19 +31,18 @@
             <div class="cards"></div>
         </div>
 
-        <script src="./js/script.js"></script>
-        <script src="./preloader.js"></script>
-        <script src="./script.js"></script>
         <div class="form-container">
             <form action="" name="infoForm" class="info-form">
                 <ul class="form-content">
                     <li class="form-row">
                         <label for="name">Имя</label>
-                        <input type="text" name="name" placeholder="Введите имя" class="info-form_input" required onchange="getName(this.value)">
+                        <input type="text" name="name" placeholder="Введите имя" class="info-form_input" required
+                            onchange="getName(this.value)">
                     </li>
                     <li class="form-row">
                         <label for="phone">Телефон</label>
-                        <input type="text" name="phone" placeholder="Введите телефон" class="info-form_input" required onchange="getPhone(this.value)">
+                        <input type="text" name="phone" placeholder="Введите телефон" class="info-form_input" required
+                            onchange="getPhone(this.value)">
                     </li>
                     <li class="form-row">
                         <select name="complexity" class="info-form_select" title="Сложность">
@@ -62,9 +61,12 @@
                 </ul>
             </form>
         </div>
-        <script src="./form.js"></script>
     </div>
 
+    <script src="./js/script-cards.js"></script>
+    <script src="./Assets/preloader.js"></script>
+    <script src="./Assets/script-rm.js"></script>
+    <script src="./Assets/form.js"></script>
 </body>
 
 </html>
