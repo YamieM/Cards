@@ -19,13 +19,13 @@ else submitBtn.disabled=true;
 }
 
 submitBtn.addEventListener('click', () => {
-    const nameText = infoForm.name.value;
-    const phoneText = infoForm.phone.value;
-    const comlexityText = infoForm.complexity.value;
+    const name = infoForm.name.value;
+    const phone = infoForm.phone.value;
+    const comlexity = infoForm.complexity.value;
     const infoObj = {
-        name: nameText,
-        phone: phoneText,
-        comlexity: comlexityText,
+        name,
+        phone,
+        comlexity,
         isChecked: infoForm.checkbox.checked,
     }
     console.log(infoObj);
